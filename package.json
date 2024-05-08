@@ -19,6 +19,7 @@
     "build": "node build.js --upload=false",
     "build:ci": "node build.js --all",
     "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
+    "buildCustom": "yarn build --runtime=node --version=18.20.2 --abi=108",
     "test": "jest",
     "lint:dry": "eslint --ignore-path .lintignore .",
     "lint:fix": "eslint --ignore-path .lintignore --fix . && prettier --ignore-path .lintignore --write .",
